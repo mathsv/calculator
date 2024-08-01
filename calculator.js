@@ -50,4 +50,17 @@ function division(){
     console.log("The division of the numbers is: " + result);
 }
 
+function newOperation(){
+    let option = prompt("Do you want to perform another operation? (yes/no): ");
+    if(option === "yes"){
+        calculator();
+    } else if(option === "no"){
+        console.log("Thank you for using the calculator!");
+    } else {
+        console.log("Invalid option! Please enter 'yes' or 'no'");
+        newOperation();
+    }
+}
+
 calculator();
+newOperation();
