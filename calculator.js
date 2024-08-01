@@ -23,7 +23,8 @@ function addition(){
     const num1 = prompt("Enter the first number: ");
     const num2 = prompt("Enter the second number: ");
     const result = parseFloat(num1) + parseFloat(num2);
-    console.log("The sum of the numbers is: " + result);
+    //console.log("The sum of the numbers is: " + result);
+    prompt("The sum of the numbers is: " + result);
 }
 
 function subtraction(){
@@ -31,7 +32,8 @@ function subtraction(){
     const num1 = prompt("Enter the first number: ");
     const num2 = prompt("Enter the second number: ");
     const result = parseFloat(num1) - parseFloat(num2);
-    console.log("The difference of the numbers is: " + result);
+    //console.log("The difference of the numbers is: " + result);
+    prompt("The difference of the numbers is: " + result);
 }
 
 function multiplication(){
@@ -39,7 +41,8 @@ function multiplication(){
     const num1 = prompt("Enter the first number: ");
     const num2 = prompt("Enter the second number: ");
     const result = parseFloat(num1) * parseFloat(num2);
-    console.log("The product of the numbers is: " + result);
+    //console.log("The product of the numbers is: " + result);
+    prompt("The product of the numbers is: " + result);
 }
 
 function division(){
@@ -47,7 +50,8 @@ function division(){
     const num1 = prompt("Enter the first number: ");
     const num2 = prompt("Enter the second number: ");
     const result = parseFloat(num1) / parseFloat(num2);
-    console.log("The division of the numbers is: " + result);
+    //console.log("The division of the numbers is: " + result);
+    prompt("The division of the numbers is: " + result);
 }
 
 function newOperation(){
@@ -55,9 +59,9 @@ function newOperation(){
     if(option === "yes"){
         calculator();
     } else if(option === "no"){
-        console.log("Thank you for using the calculator!");
+        prompt("Thank you for using the calculator!");
     } else {
-        console.log("Invalid option! Please enter 'yes' or 'no'");
+        prompt("Invalid option! Please enter 'yes' or 'no'");
         newOperation();
     }
 }
