@@ -1,0 +1,53 @@
+function calculator(){
+    const operation = prompt("Enter the operation you want to perform:\n1. Addition (+)\n2. Subtraction (-)\n3. Multiplication (x)\n4. Division (/)\n");
+    //console.log(operation)
+    
+    switch(parseInt(operation)){
+        case 1:
+            addition();
+            break;
+        case 2:
+            subtraction();
+            break;
+        case 3:
+            multiplication();
+            break;
+        case 4:
+            division();
+            break;
+    }
+}
+
+function addition(){
+    // Get the numbers from the user and parse them to float then add them
+    const num1 = prompt("Enter the first number: ");
+    const num2 = prompt("Enter the second number: ");
+    const result = parseFloat(num1) + parseFloat(num2);
+    console.log("The sum of the numbers is: " + result);
+}
+
+function subtraction(){
+    // Get the numbers from the user and parse them to float then subtract them
+    const num1 = prompt("Enter the first number: ");
+    const num2 = prompt("Enter the second number: ");
+    const result = parseFloat(num1) - parseFloat(num2);
+    console.log("The difference of the numbers is: " + result);
+}
+
+function multiplication(){
+    // Get the numbers from the user and parse them to float then multiply them
+    const num1 = prompt("Enter the first number: ");
+    const num2 = prompt("Enter the second number: ");
+    const result = parseFloat(num1) * parseFloat(num2);
+    console.log("The product of the numbers is: " + result);
+}
+
+function division(){
+    // Get the numbers from the user and parse them to float then divide them
+    const num1 = prompt("Enter the first number: ");
+    const num2 = prompt("Enter the second number: ");
+    const result = parseFloat(num1) / parseFloat(num2);
+    console.log("The division of the numbers is: " + result);
+}
+
+calculator();
